@@ -84,10 +84,6 @@ function Game() {
     setCurrentPlayer((prev) => (prev + 1) % players);
   };
 
-  const nextTurn = () => {
-    setCurrentPlayer((currentPlayer + 1) % players);
-  };
-
   const startGame = () => {
     setGameStarted(true);
     setGameEnded(false);
